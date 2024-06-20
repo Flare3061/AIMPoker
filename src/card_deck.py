@@ -2,7 +2,7 @@ import random
 
 class CardDeck:
     def __init__(self):
-        self.cards = [f"{suit}{rank}" for suit in 'SHDC' for rank in '23456789TJQKA']
+        self.cards = [f"{rank}{suit}" for suit in 'SHDC' for rank in '23456789TJQKA']
         self.shuffle()
 
     def shuffle(self):
